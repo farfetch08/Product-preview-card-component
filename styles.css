@@ -1,0 +1,147 @@
+/* font-family: 'Fraunces', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+
+
+* {
+    margin: 0;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;   
+    align-items: center;
+}
+.card {
+    border-radius: 10px;
+    margin: 0 20%;
+    background-color: hsl(0, 0%, 100%);
+    /* overflow: hidden; */
+    width: 600px;
+    box-shadow: 2px 2px 5px hsla(212, 21%, 14%, 0.237);
+}
+
+.perfume-img {
+    float: left;
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    float: left;
+    height: 100%;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.body-text {
+    width: 225px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    padding: 30px 0;
+}
+
+.flex-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    overflow: visible;
+}
+
+.price {
+    padding: 20px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.text1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+
+.text2 {
+    text-decoration: line-through;
+    padding: 10px 0;
+}
+
+.btn {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    font-weight: 900;
+    letter-spacing: .4px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 31%);
+}
+.btn>img {
+    padding: 0 5px;
+}
+
+.attribution {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.attribution > a {
+    color:  hsl(158, 36%, 37%);
+}
+
+@media (max-width: 600px){
+    .col {
+        grid-template-columns: auto;
+    }
+    .perfume-img {
+        float: left;
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+    h1 {
+        padding: 15px 0;
+    }
+    .body-text {
+        width: 100%;
+        line-height: 20px;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .card {
+        border-radius: 10px;
+        margin: 0 12%;
+        background-color: hsl(0, 0%, 100%);
+        /* overflow: hidden; */
+        width: 600px;
+        box-shadow: 2px 2px 5px hsla(212, 21%, 14%, 0.237);
+    }
+}
